@@ -2,12 +2,12 @@
 import javax.swing.JOptionPane;
 public class Comissao {
     public static void main(String[] args) {
-       double qtdvendida,precouni,comissao,res,pagamento;
+       double qtdvendida,precounidade,comissao,res,pagamento;
 
-       precouni = Double.parseDouble(JOptionPane.showInputDialog("Digite o preço por unidade:"));
+       precounidade = Double.parseDouble(JOptionPane.showInputDialog("Digite o preço por unidade:"));
        qtdvendida = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade vendida:"));
 
-       res = precouni * qtdvendida;
+       res = precounidade * qtdvendida;
 
        comissao = res * 5/100;
 
