@@ -4,13 +4,12 @@ import javax.swing.JOptionPane;
 public class Dolares{
     public static void main (String [] x){
 
-        System.out.println("1 dólar = 5,10 reais");
-
-        double  valor,res;
+        double  cotacao,valor,res;
         
+        cotacao = Double.parseDouble(JOptionPane.showInputDialog("Digite a cotação do dólar:"));
         valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor que deseja converter:"));
 
-        res = valor * 5.10;
+        res = valor * cotacao;
 
         String s = String.format(
              "O valor em dólares é: %.2f",
