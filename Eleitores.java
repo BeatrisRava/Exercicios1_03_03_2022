@@ -9,11 +9,11 @@ public class Eleitores {
         vnulos = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de votos nulos"));
         validos = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de votos validos"));
 
-       perbrancos = (eleitores * vbrancos) / 100;
+       perbrancos = (vbrancos/eleitores) * 100;
 
-       pernulos = (eleitores * vnulos) / 100;
+       pernulos = (vnulos/eleitores) * 100;
        
-       pervalidos = (eleitores * validos) / 100;
+       pervalidos = (validos/eleitores) * 100;
 
 
        String s = String.format(
